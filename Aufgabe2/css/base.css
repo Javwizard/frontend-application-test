@@ -49,20 +49,61 @@ a {
   font-size: 0.8em;
   text-transform: uppercase;
   }
+  .section.content{
+    height: 40vw;
+    background-size:100% 40vw;
+  }
+  
+  .part p{
+    width:80%;
+  }
+  .part h3{
+    width:12em;
+  }
+  .part{
+    height: 40vw;
+      }
+  
 }
 @media (max-width:700px){
   .navbar li{
     display:none;
   }
+  .section.content{
+    height: 60vw;
+  }
   
+  
+  
+  .part{
+    height: 60vw;
+    background-size:100% 60vw;
+        
+
+  }
+  .part p{
+    width:100% ;
+      
+
+    
+  }
+  .part h3{
+   
+    
+    width:100% !important;
+  }
   .navbar li::active{
     display: block;
   }
   .inner-container:before{
-    content: "Menü";
+    font-family: 'FontAwesome';
+    content: "\f0c9";
     color:white;
   }
-  
+  .inner-container:hover >.navbar li{
+    display: block;
+    background-color: rgba(0,0,0,0.7)
+  }
 }
 .navbar-nav>li .icon{
   display:none;
@@ -78,6 +119,8 @@ div.row:nth-child(2){
   background-size: 100%,16em;
   background-repeat: no-repeat;
   height:16em;
+  /*! border-bottom: black; */
+  box-shadow: inset 0px -8px 10px 0px #000,5px 5px 5px 1px #050404;
 }
 .title{
   width:100%;
@@ -98,43 +141,76 @@ div.row:nth-child(2){
 }
 
 .part{
+  position: relative;
 	width:100vw;
-	height:40vw;
+	background-position: center; 
 	float:left;
-	background-size:100% 40vw;
-}
-.part:nth-child(odd){
-  background-color: black;
-  color: white;
+
+   
+    color: white;
 }
 .part > h3{
-  padding-top: 2em;
-  width:80%;
+  
+  padding: 1em;
   font-size: 1.5em;
   font-weight: bold ;
   padding-bottom:  1em;
-  text-align: center;
-  background-color: rgba(0,0,0,0.5)
+  text-align:center;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  position: absolute;
 }
 .part > p{
-  width:80%;
-  padding-bottom: 1.5em;
+	position:absolute;
+	
+	padding-bottom: 1.5em;
   margin:0 auto;
-  background-color: rgba(0,0,0,0.5)
+	background-color: rgba(0,0,0,0.5);
+	
+
+	z-index: 1;
+	top: 50%;
 }
 div.row:last-child{
   background-color: black;
   color:white;
-  padding: 2em 2em;
+ 
 }
 section.content{
 	position:relative;
 	width:400vw;
-	height:40vw;
+	
 	overflow:hidden;
-
+	transition:left 1s;
 }
 .part:first-child{
-	background-image:url("../img/apps.jpg");
-	background-size:100% 40vw;
+
+	
+}
+.slider-background{
+  z-index: -1;
+  width: 100%;
+  height:100%;
+  /*! position: fixed; */ 
+  left: 0px; 
+  top: 0px; 
+  position: static;
+}
+.social-buttons{
+  margin: 0 auto;
+  padding: 1em;
+  display: block;
+  width: 6em;
+  font-size: 2em;
+}
+.social-buttons i {
+  display: inline-block;
+  width: 3em;
+  height:3em;
+  padding:  0.3em;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.icon-facebook{
+ 
 }

@@ -3,10 +3,13 @@ window.onload=function(){
     var slides= document.querySelectorAll(".part");
     setInterval(function(){
         if(index<4){
-            slides[index].style["background-image"]="url(./img/"+backgroundImages[index-1];
+            var imgTag= document.createElement("img");
+            imgTag.setAttribute("src", "./img/"+backgroundImages[index-1]);
+            imgTag.classList.add("slider-background");
+             slides[index].appendChild(imgTag);
         }
         slide(index);
-          index++;  }, 3000
+          index++;  }, 4000
         )
 };
 var backgroundImages=["entwicklung.jpg","marketing.jpg","team.jpg"];
