@@ -1,1 +1,129 @@
 /* CSS-Anpassungen bitte hier */
+/* css Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+  color:white;
+}
+
+.navbar .inner-container {
+  position: fixed;
+  width:100%;
+  background-color: black;
+  height: 2.5em;
+  top: 0;
+  text-align: center;
+}
+.inner-container .navbar{
+  width:80%;
+  margin: 0 auto;
+  
+
+}
+@media (min-width:700px){ 
+.navbar li{
+  text-align: center;
+  display:inline-block;
+  float: left;
+  padding:1em;
+  list-style: none;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  }
+}
+@media (max-width:700px){
+  .navbar li{
+    display:none;
+  }
+  
+  .navbar li::active{
+    display: block;
+  }
+  .inner-container:before{
+    content: "Menü";
+    color:white;
+  }
+  
+}
+.navbar-nav>li .icon{
+  display:none;
+}
+.navbar-nav>li:hover{
+  text-decoration: underline;
+  text-decoration-color: rgba(0,255,255,1);
+}
+div.row:nth-child(2){
+  width:100%;
+  display: block;
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Artificial-intelligence-elon-musk-hawking.jpg/512px-Artificial-intelligence-elon-musk-hawking.jpg);
+  background-size: 100%,16em;
+  background-repeat: no-repeat;
+  height:16em;
+}
+.title{
+  width:100%;
+  height:100%;
+  
+  padding-bottom: ;
+  background-color: rgba(0,0,0,0.5)
+}
+.site-name{
+  padding-top: 2em;
+  font-size: 3em
+} 
+.slogon{
+  font-size: 1.5em;
+}
+
+
+.title{
+  text-align: center;
+}
+section.content{
+ 
+}
+
+.part:nth-child(odd){
+  
+  background-color: black;
+  color: white;
+  padding: 1em
+}
+.part > h3{
+  padding-top: 2em;
+  width:80%;
+  font-size: 1.5em;
+  font-weight: bold ;
+  padding-bottom:  1em;
+  text-align: center;
+}
+.part > p{
+  width:80%;
+  padding-bottom: 1.5em;
+  margin:0 auto;
+}
+div.row:last-child{
+  width:100%;
+  background-color: black;
+  color:white;
+  padding: 2em 2em;
+}
