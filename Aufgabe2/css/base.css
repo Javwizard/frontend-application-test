@@ -17,8 +17,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	font-family: 'Raleway', sans-serif;
 }
 a {
   text-decoration: none;
@@ -26,27 +25,27 @@ a {
 }
 
 .navbar .inner-container {
-  position: fixed;
   width:100%;
+  position: fixed;
   background-color: black;
-  height: 2.5em;
+  height: 3.8em;
   top: 0;
   text-align: center;
+  z-index:2;   
 }
-.inner-container .navbar{
-  width:80%;
-  margin: 0 auto;
-  
-
+.navbar ul{
+ 
+ display: inline-block;
+ list-style-type: none;
 }
-@media (min-width:700px){ 
+@media (min-width:767px){ 
 .navbar li{
   text-align: center;
   display:inline-block;
-  float: left;
-  padding:1em;
-  list-style: none;
-  font-size: 0.8em;
+  padding:1em 0.5em;
+ 
+  font-size: 1.35em;
+  font-style: bold;
   text-transform: uppercase;
   }
   .section.content{
@@ -65,38 +64,39 @@ a {
       }
   
 }
-@media (max-width:700px){
+@media (max-width:767px){
   .navbar li{
     display:none;
+    width:100%;
+    font-size: 2em;
   }
   .section.content{
     height: 60vw;
   }
-  
-  
-  
   .part{
     height: 60vw;
     background-size:100% 60vw;
-        
-
   }
   .part p{
-    width:100% ;
-      
-
-    
+    width:100%;
+    font-size: 1em !important;
   }
   .part h3{
-   
-    
     width:100% !important;
+  }
+  .navbar ul{
+    width:100%;
   }
   .navbar li::active{
     display: block;
+    width:100%;
+    font-size: 1em;
   }
   .inner-container:before{
     font-family: 'FontAwesome';
+    font-size: 2em;
+    float:right;
+    padding:0.2em;
     content: "\f0c9";
     color:white;
   }
@@ -114,11 +114,12 @@ a {
 }
 div.row:nth-child(2){
   width:100%;
+  
   display: block;
   background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Artificial-intelligence-elon-musk-hawking.jpg/512px-Artificial-intelligence-elon-musk-hawking.jpg);
-  background-size: 100%,16em;
+  background-size: 100% 20em;
   background-repeat: no-repeat;
-  height:16em;
+  height:20em;
   /*! border-bottom: black; */
   box-shadow: inset 0px -8px 10px 0px #000,5px 5px 5px 1px #050404;
 }
@@ -134,8 +135,6 @@ div.row:nth-child(2){
 .slogon{
   font-size: 1.5em;
 }
-
-
 .title{
   text-align: center;
 }
@@ -145,14 +144,12 @@ div.row:nth-child(2){
 	width:100vw;
 	background-position: center; 
 	float:left;
-
-   
-    color: white;
+  color: white;
+  overflow: hidden;
 }
 .part > h3{
-  
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-weight: bold ;
   padding-bottom:  1em;
   text-align:center;
@@ -162,31 +159,24 @@ div.row:nth-child(2){
 }
 .part > p{
 	position:absolute;
-	
 	padding-bottom: 1.5em;
+  font-size: 1.3em;
   margin:0 auto;
 	background-color: rgba(0,0,0,0.5);
-	
-
 	z-index: 1;
 	top: 50%;
 }
 div.row:last-child{
   background-color: black;
   color:white;
- 
 }
 section.content{
 	position:relative;
 	width:400vw;
-	
 	overflow:hidden;
 	transition:left 1s;
 }
-.part:first-child{
 
-	
-}
 .slider-background{
   z-index: -1;
   width: 100%;
@@ -202,15 +192,16 @@ section.content{
   display: block;
   width: 6em;
   font-size: 2em;
+  text-align: center;
 }
 .social-buttons i {
   display: inline-block;
-  width: 3em;
-  height:3em;
+  
+  
   padding:  0.3em;
-  border-radius: 50%;
-  border: 2px solid white;
+  ;
 }
-.icon-facebook{
- 
+#tm-copyright{
+  text-align: center;
+  font-size:1.5em;
 }
