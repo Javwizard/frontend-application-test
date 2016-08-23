@@ -87,22 +87,23 @@ div.row:nth-child(2){
   width:100%;
   display: block;
   background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Artificial-intelligence-elon-musk-hawking.jpg/512px-Artificial-intelligence-elon-musk-hawking.jpg);
-  background-size: 100% 20em;
+  background-size: 100% 35em;
   background-repeat: no-repeat;
-  height:20em;
+  height:35em;
   box-shadow: inset 0px -8px 10px 0px #000,5px 5px 5px 1px #050404;
 }
 .title{
+  padding-top: 10em;
   width:100%;
   height:100%;
   background-color: rgba(0,0,0,0.5)
 }
 .site-name{
   padding-top: 2em;
-  font-size: 3em
+  font-size: 4em
 } 
 .slogon{
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 .title{
   text-align: center;
